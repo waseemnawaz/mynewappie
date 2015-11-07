@@ -2,13 +2,37 @@
 <html>
 <head>
   <title>SampleApp</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="navbar navbar-inverse navbar-static-top" id="navigationbar">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="./">Home</a></li>
+      <li><a href="blog/">Blog</a></li>
+      <li><a href="projects/">Projects</a></li>
+      <li><a href="contact/">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+	<h1>Welcome to Bike Berlin</h1>
+	<h2>Your source for used bikes in Berlin</h2>
+
+<%= image_tag("bike.jpg", :class => "style_image") %>
+
 
 <%= yield %>
+<footer>
+	<div class="container-fluid" id="foot">
+		<p>I am the footer element</p>
+	</div>
+	</footer>
 
 </body>
 </html>
