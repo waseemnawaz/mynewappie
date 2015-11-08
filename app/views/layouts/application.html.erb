@@ -10,6 +10,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="wrapper">
   <div class="navbar navbar-inverse navbar-static-top" id="navigationbar">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
@@ -28,11 +29,16 @@
 
 
 <%= yield %>
-<footer>
+<div class="push"></div>
+</div> <!--Wrapper-->
+<div class="footer">
+    <p>Footer content here</p>
+ </div>
+<!--footer>
 	<div class="container-fluid" id="foot">
 		<p>I am the footer element</p>
 	</div>
-	</footer>
+</footer-->
 
 </body>
 </html>
