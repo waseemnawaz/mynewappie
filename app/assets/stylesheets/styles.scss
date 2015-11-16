@@ -2,14 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 {
+body {
+	background-color: pink;
+}
+
+.old {
 	font-family: Brush Script MT;
 	color: red;
 	text-align: center;
 }
 
-h1 {
-	padding-top: 25px;
+.old {
+	padding-top: 50px;
 }
 
 #bberl {
@@ -62,9 +66,10 @@ p {
 * {
     margin: 0;
 }
+
 html, body {
     height: 100%;
-    background-color:#eaeaea;
+    /*background-color:#eaeaea;*/
 }
 .wrapper {
     min-height: 100%;
@@ -78,7 +83,7 @@ html, body {
 }
 .footer {
     border:solid 1px blue;
-    background-color: grey;
+    background-color: red;
 }
 
 .footer p {
@@ -88,14 +93,15 @@ html, body {
 	font-size: 1em;
 }
 
+/*** Sticky footer end ***/
+
 h2 {
 	font-family: Verdana;
 	color: blue;
-	text-transform: uppercase;
 }
 
 .loco {
-	text-transform: uppercase;
+	text-transform: lowercase;
 }
 
 table {
@@ -104,5 +110,19 @@ table {
 }
 
 .crazy {
+	text-align: center;
+}
+
+.new {
+	font-family: Helvetica;
+	text-align: center;
+	color: grey;
+}
+
+#contacto {
+	text-align: center;
+}
+
+#sobre {
 	text-align: center;
 }
