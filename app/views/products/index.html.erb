@@ -15,7 +15,7 @@
 
   <tbody>
     <% @products.each do |product| %>
-      <tr>
+      <tr :class => "crazy">
         <h2 :class => "loco"><%= product.name %></h2>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
