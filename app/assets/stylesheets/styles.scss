@@ -3,11 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-	background-color: pink;
+	background-color: #EEE9E9;
+}
+
+#navigacion {
+	background-color: #4876FF;
+	color: white;
+}
+
+#navigacion ul li a {
+	color: white;
 }
 
 .carousel-inner {
-	height: 500px;
+	height: 100%;
 	max-width: auto;
 	/*margin-right: 300px;
 	margin-left: 300px;*/
@@ -17,22 +26,29 @@ body {
 #carusel {
 	padding-left: 0px;
 	padding-right: 0px;
+	height: 100%;
 }
 
 .old {
-	font-family: Brush Script MT;
+	font-family: Tahoma;
 	color: red;
 	text-align: center;
-}
-
-.old {
 	padding-top: 50px;
 }
 
-#bberl {
+.old h1 h2 {
+	color: red;
+}
+
+#bberl a {
 	text-decoration: none;
 	color: white;
-	background-color: blue;
+	background-color: #4876FF;
+}
+
+.feature {
+	text-align: center;
+	color:red;
 }
 
 /*#navigationbar {
@@ -41,10 +57,6 @@ body {
     color: white;
 	font-family: 'Helvetica Neue', Helvetica, Arial, serif;
 }*/
- 
-h2 {
-	text-align: center;
-}
 
 /*.style_image {
 	display: block;
@@ -60,10 +72,6 @@ h2 {
 	margin-right: auto;
 }
 
-p {
-	text-align: center;
-}
-
 /*#foot {
 	height: 100px;
 	background-color: grey;
@@ -76,23 +84,22 @@ p {
 	text-transform: uppercase; 
 }*/
 /**** sticky footer ****/
-* {
+/** {
     margin: 0;
 }
 
 html, body {
     height: 100%;
-    /*background-color:#eaeaea;*/
 }
 .wrapper {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -100px; /* the bottom margin is the negative value of the footer's         height */
+    margin: 0 auto -80px; 
     border:solid 1px red;
 }
 .footer, .push {
-    height: 100px; /* '.push' must be the same height as 'footer' */
+    height: 80px; 
 }
 .footer {
     border:solid 1px blue;
@@ -104,32 +111,28 @@ html, body {
 	text-transform: uppercase;
 	color: white;
 	font-size: 1em;
-}
+}*/
 
 /*** Sticky footer end ***/
 
-h2 {
-	font-family: Verdana;
-	color: blue;
-}
 
 .loco {
 	text-transform: lowercase;
 }
 
-table {
+/*table {
 	margin-left: auto;
 	margin-right: auto;
-}
+}*/
 
 .crazy {
 	text-align: center;
 }
 
 .new {
-	font-family: Helvetica;
+	font-family: Tahoma;
 	text-align: center;
-	color: grey;
+	color: red;
 }
 
 #contacto {
@@ -138,31 +141,48 @@ table {
 
 #sobre {
 	text-align: center;
+	color: red;
+}
+
+#sobre p {
+	color: blue;
+}
+
+#timething p {
+	text-align: center;
+	color: blue;
 }
 
 /*** index.html.erb ***/
 
 #productos {
 	text-align: center;
-	background-color: grey;
-	background: #eee;
+	background-color: #FFFAFA;
     box-shadow:
         0 1px 1px rgba(0,0,0,0.15), /* The top layer shadow */
         0 10px 0 -5px #eee, /* The second layer */
         0 10px 1px -4px rgba(0,0,0,0.15), /* The second layer shadow */
         0 20px 0 -10px #eee, /* The third layer */
         0 20px 1px -9px rgba(0,0,0,0.15); /* The third layer shadow */
-    -moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;    
+    
 }
 
 #productos h1 {
 	font-family: Comic Sans, Comic Sans MS, cursive;
-	 text-shadow: 1px 1px 1px #000, 3px 3px 5px blue; 
+	 text-shadow: 1px 1px 1px #000, 3px 3px 5px red; 
 }
 
 #productos p {
 	font-family: Verdana;
 	font-size: 1em;
+	color: blue;
 }
+
+/*** new.html.erb ***/
+.newproduct {
+	color: red;
+	font-family: Tahoma;
+}
+
+
+
