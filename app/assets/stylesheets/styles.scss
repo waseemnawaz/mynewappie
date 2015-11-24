@@ -182,7 +182,16 @@ html, body {
 .newproduct {
 	color: red;
 	font-family: Tahoma;
+	text-align: center;
 }
 
+/*** form.html.erb ***/
 
+.field {
+	text-align: center;
+}
+
+.actions {
+	text-align: center;
+}
 
