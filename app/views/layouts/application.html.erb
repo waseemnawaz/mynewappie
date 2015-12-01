@@ -35,15 +35,20 @@
             <span class="icon-bar"></span>
           </button>
           <div class="Home navbar-brand" id="bberl">
-            <a href="#">BikeBerlin</a>
+            <!--a href="#">BikeBerlin</a-->
+            <%=link_to "BikeBerlin", static_pages_landing_page_path%>
           </div> 
         </div> 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About us</a></li>
-            <li><a href="#hacemos">What we do</a></li>
-            <li><a href="#faq">Products</a></li>
-            <li><a href="#other">Contact</a></li>
+            <!--li><a href="#about">About us</a></li-->
+            <li><%=link_to "About", static_pages_about_path%></li>
+            <!--li><a href="#hacemos">What we do</a></li-->
+            <li><%=link_to "Hacemos", static_pages_index_path%></li>
+            <!--li><a href="#faq">Products</a></li-->
+            <li><%=link_to "Products", products_path%></li>
+            <!--li><a href="#other">Contact</a></li-->
+            <li><%=link_to "Contact", static_pages_contact_path%></li>
           </ul>
         </div>
       </div>
