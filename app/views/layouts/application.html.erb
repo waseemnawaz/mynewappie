@@ -49,6 +49,11 @@
             <li><%=link_to "Products", products_path%></li>
             <!--li><a href="#other">Contact</a></li-->
             <li><%=link_to "Contact", static_pages_contact_path%></li>
+            <%= form_tag("/products", class: "navbar-form navbar-left", method: "get") do %>
+            <%= label_tag(:q, "Search for:", class: "form-group") %>
+            <%= text_field_tag(:q, class: "form-group") %>
+            <%= submit_tag("Search", class: "btn btn-default") %>
+            <% end %>
           </ul>
         </div>
       </div>
