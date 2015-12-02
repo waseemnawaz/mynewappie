@@ -187,7 +187,7 @@ html, body {
 
 /*** form.html.erb ***/
 
-.field {
+/*.field {
 	text-align: center;
 }
 
@@ -197,8 +197,43 @@ html, body {
 
 .zeit h1 {
 	text-align: center;
+}*/
+
+/***form_for ***/
+
+#formfor {
+	margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    max-width: 300px;
+    position: relative;
 }
 
-/***form_tag navbar ***/
+.field, .actions {
+	font-family: "Trebuchet MS";
 
- 
+}
+
+#formfor .form-control {
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	/*-webkit-border-radius: 5px; */
+	border: 2px solid grey;
+}
+
+/***form_tag ***/
+
+.format {
+	display: inline-block;
+}
+
+label.form-control {
+	background-color: red;
+	color: black;
+	margin-top: 5px;
+	font-family: Tahoma;
+}
+
+
