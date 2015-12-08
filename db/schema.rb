@@ -25,6 +25,9 @@ ActiveRecord::Schema.define(version: 20151208133405) do
   add_index "comments", ["product_id"], name: "index_comments_on_product_id"
   add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
+ActiveRecord::Schema.define(version: 20151203193718) do
+
+
   create_table "orders", force: :cascade do |t|
     t.integer "user_id"
     t.integer "product_id"
