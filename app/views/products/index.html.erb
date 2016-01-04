@@ -11,9 +11,9 @@
         <p><%= product.description %></p>
         <p><%= link_to(image_tag(product.image_url, class: "img-responsive"), product) %><%#= product.image_url %></p>
         <p><%= link_to 'Show', product %></p>
-        <p><%= link_to 'Edit', edit_product_path(product) %></p>
+        <p><% if signed_in? && current_user.admin? %><%= link_to 'Edit', edit_product_path(product) %><% end %></p>
         <!--p><%#= link_to 'Static', static_pages_contact_path %></p-->
-        <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        <p><% if signed_in? && current_user.admin? %><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %><% end %></p>
         <!--p>Description</p>
         <strong>Price 1</strong-->
       </div><!-- /col -->
