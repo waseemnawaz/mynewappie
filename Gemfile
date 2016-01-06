@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 # added from chapter 30
-group :production do
-  gem 'pg'
-end
+#group :production do
+  #gem 'pg'
+#end
 # added from chapter 30
 group :production do
   gem 'rails_12factor'
@@ -45,6 +45,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'rspec-rails', '~> 3.0'
 end
 
 group :development do
@@ -61,6 +62,6 @@ gem 'devise'
 
 gem 'will_paginate', '~> 3.0.6'
 
-group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
-end
+#group :development, :test do
+  #gem 'rspec-rails', '~> 3.0'
+#end
