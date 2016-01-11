@@ -4,7 +4,7 @@ describe UsersController, :type => :controller do
 
   before do
     @user = User.create(email: "peter@example.com", password: "1234567890")
-    @user2 = User.create(email: "maria@no.com", password: "lalala")
+    @user2 = User.create!(email: "maria@no.com", password: "lalalalalala")
   end
 
   describe "GET #show" do
