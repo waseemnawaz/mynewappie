@@ -8,8 +8,11 @@ class Ability
     if user.admin?
       can :manage, :all
     else
-      can :read, :all
+      #can :read, :all
+      can :read, :user
     end
+    
+
 
     #if user.role?(:admin)
         #can :manage, :all
