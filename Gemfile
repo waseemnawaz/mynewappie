@@ -67,7 +67,7 @@ gem 'devise'
 
 gem 'will_paginate', '~> 3.0.6'
 
-
+gem 'stripe'
 
 #group :development, :test do
   #gem 'rspec-rails', '~> 3.0'
