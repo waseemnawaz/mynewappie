@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   end
   resources :users
 
+  resources :payments
+
   get 'static_pages/about'
 
   get 'static_pages/contact'
