@@ -13,17 +13,23 @@
 		</h4>
 	</div>
 	<div class="col-md-3">
+		<h4 :class="hello">
+  			<span class="glyphicon glyphicon-usd" aria-hidden="true"><strong>Price:</strong></span>
+  			<%= @product.price %>
+		</h4>
+	</div>
+	<div class="col-md-3">
 		<h4>
   			<span class="glyphicon glyphicon-zoom-in" aria-hidden="true"><strong>Description:</strong></span>
   			<%= @product.description %>
 		</h4>
 	</div>
-	<div class="col-md-3">
+	<!--div class="col-md-3">
 		<h4>
 			<span class="glyphicon glyphicon-picture" aria-hidden="true"><strong>Photo</strong></span>
-  			<%= image_tag @product.image_url, class: "img-responsive showpic" %>
+  			<%#= image_tag @product.image_url, class: "img-responsive showpic" %>
 		</h4>
-	</div>
+	</div-->
 	<div class="col-md-3">
 		<h4>
   			<span class="glyphicon glyphicon-pencil" aria-hidden="true"><strong>Colour:</strong></span>
