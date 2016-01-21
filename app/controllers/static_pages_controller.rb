@@ -4,6 +4,8 @@ class StaticPagesController < ApplicationController
   def landing_page
 		@featured_product = Product.first
 		@products = Product.limit(3)
+    logger.debug "======== FEATURED PRODUCT: #{@featured_product}"
+    byebug
 	end
   def thank_you
       @name = params[:name]
