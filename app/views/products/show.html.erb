@@ -1,7 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container">
-	<%= image_tag @product.image_url, class: "img-responsive bigshowpic" %>
+	<%#= image_tag @product.image_url, class: "img-responsive bigshowpic" %>
+	<%= image_tag(@product.image_url, class: "img-zoom img-responsive bigshowpic", data_zoom_image: @product.image_url) %>
 </div>
 
 <div class="container">
