@@ -71,6 +71,7 @@ gem 'stripe'
 
 gem "brakeman", :require => false
 
+gem 'angularjs-rails'
 #group :development, :test do
   #gem 'rspec-rails', '~> 3.0'
 #end
