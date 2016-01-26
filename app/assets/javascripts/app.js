@@ -4,7 +4,7 @@ $(document).on('ready page:load', function() {
   angular.bootstrap(document.body, ['shop'])
 });
 
-app.factory('models', ['$resource', function(){
+app.factory('models', ['$resource', function($resource){
   var orders_model = $resource("/orders/:id.json", {id: "@id"});
   var products_model = $resource("/products/:id.json", {id: "@id"});
   var x = {
