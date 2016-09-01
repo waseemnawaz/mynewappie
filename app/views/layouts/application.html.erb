@@ -9,29 +9,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
 </head>
-<body>
-	<!--div class="wrapper"-->
-  <!--div class="navbar navbar-inverse navbar-static-top" id="navigationbar">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="./">Home</a></li>
-      <li><a href="blog/">Blog</a></li>
-      <li><a href="projects/">Projects</a></li>
-      <li><a href="contact/">Contact</a></li>
-    </ul>
-  </div>
-</div-->
+<!--body-->
   <body data-spy="scroll" data-target=".navbar">
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <!--p class="notice"><%= notice %></p-->
-    <!--p class="alert">Test alert<%= alert %></p-->
     <% if notice %>
       <p id="notice" class="alert alert-info"><%= notice %></p>
     <% end %>
     <% if alert %>
       <p id="alert" class="alert alert-info"><%= alert %></p>
     <% end %>
-    
+    <!--div class="navbar navbar-inverse navbar-static-top" id="navigationbar"-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navigacion">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -44,7 +31,7 @@
           </button>
           <div class="Home navbar-brand" id="bberl">
             <!--a href="#">BikeBerlin</a-->
-            <%=link_to "BikeBerlin", static_pages_landing_page_path%>
+            <%=link_to "BikeBerlin", static_pages_landing_page_path, class: "home" %>
           </div> 
         </div> 
         <div class="navbar-collapse collapse">
@@ -57,14 +44,6 @@
             <li><%=link_to "Products", products_path%></li>
             <!--li><a href="#other">Contact</a></li-->
             <li><%=link_to "Contact", static_pages_contact_path%></li>
-            <%= form_tag("/products", class: "navbar-form navbar-left", method: "get") do %>
-            <div class="form-group">
-            <%= label_tag(:q, "Search for:", class: "form-control") %>
-            <%= text_field_tag(:q, nil, class: "form-control") %></div>
-            <%= submit_tag("Search", class: "btn btn-default") %>
-            <% end %>
-          </ul>
-          <ul class="nav pull-right" id="logouts">
             <li>
             <% if user_signed_in? %>
             <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
@@ -72,6 +51,12 @@
             <%= link_to('Login', new_user_session_path) %>
             <% end %>
             </li>
+            <%= form_tag("/products", class: "navbar-form navbar-left more", method: "get") do %>
+            <div class="form-group">
+            <%= label_tag(:q, "Search for:", class: "form-control more") %>
+            <%= text_field_tag(:q, nil, class: "form-control") %></div>
+            <%= submit_tag("Search", class: "btn btn-default more") %>
+            <% end %>
           </ul>
         </div>
       </div>
@@ -79,25 +64,19 @@
 
     <div class="container" id="anchor">
     </div>
-  <div class="old">
-	 <h1>Welcome to Bike Berlin</h1>
-	 <h2>Your source for used bikes in Berlin</h2>
-  </div>
 
 
 
 
+    <div class="page-wrap">
 <%= yield %>
-<!--div class="push"></div>
-</div--> <!--Wrapper-->
-<!--div class="footer">
-    <p>Footer content here</p>
- </div-->
-<!--footer>
-	<div class="container-fluid" id="foot">
-		<p>I am the footer element</p>
-	</div>
-</footer-->
+    </div>
+      <footer class="site-footer">
+        <div class="copyright">
+        &copy; Bike Berlin 2016
+        </div>
+      </footer>
+
 
 </body>
 </html>
