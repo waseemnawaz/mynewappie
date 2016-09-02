@@ -458,3 +458,31 @@ label.form-control {
 	text-align: center;
 }
 
+/*** Media queries ***/
+
+@media (max-width: 480px) {
+	h1, h2 {
+		font-size: 1.6em;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
+
+@media (max-width: 480px) {
+	#carusel, .indexpic {
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		background-color: #E0D8FF;
+	}
+}
+
+@media (max-width: 480px) {
+	.site-footer {
+		background-color: white;
+	}
+}
+
