@@ -1,9 +1,13 @@
 
-<h1 class="zeit"><%= render 'hello' %></h1>
-<p id="notice"><%= notice %></p>
-<h1 class="new">Listing Products</h1>
+<!--h1 class="zeit"><%#= render 'hello' %></h1-->
 
-<div class="container-fluid">
+<p id="notice"><%= notice %></p>
+
+
+<div class="container-fluid anchor">
+	<div class="new">
+		<h1>Our Bikes</h1>
+	</div>
   <div class="row" id="productos">
     <% cache(cache_key_for_products) do %>
     <%= render @products %>
