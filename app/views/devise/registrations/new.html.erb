@@ -1,4 +1,5 @@
-<div class="container" id="sainap"
+<div class="container anchor" id="sainap">
+  <div class="sainap">
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -47,10 +48,14 @@
     <%#= f.submit "Sign up" %>
   </div-->
 
-  <div class="actions">
+  <div class="actions sainapblue">
     <%= f.submit value: "Sign up", class: "btn btn-lg btn-primary btn-block" %>
   </div>
 
 <% end %>
-</div>
+<div class="sainaplinks">
 <%= render "devise/shared/links" %>
+</div>
+</div>
+</div>
+<%#= render "devise/shared/links" %>

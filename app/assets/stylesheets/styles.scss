@@ -304,6 +304,7 @@ html, body {
 	font-family: Courier New, Lucida Sans Typewriter, Verdana, sans-serif;	
 	text-align: center;
 	font-size: 1.8em;
+	text-transform: uppercase;
 }
 
 #productos p {
@@ -311,20 +312,22 @@ html, body {
 	font-size: 1.5em;
 	color: blue;
 	text-align: center;
+	text-transform: lowercase;
 }
 
-.loco {
+/*** ***/
+
+/*.loco {
 	text-transform: lowercase;
 }
 
 .crazy {
 	text-align: center;
-}
+}*/
 
 /*** new.html.erb ***/
 .newproduct {
-	color: red;
-	font-family: Tahoma;
+	font-family: Courier New, Lucida Sans Typewriter, Verdana, sans-serif;	
 	text-align: center;
 }
 
@@ -388,15 +391,23 @@ label.form-control {
 
 /*** sign_up page ***/
 
-#sainap {
+.sainap {
 	text-align: center;
 	max-width: 250px;
 	padding: 15px;
 	margin: 0 auto;
 }
 
-#sainap #paswan {
+.sainap #paswan {
 	height: 19px;
+}
+
+.sainaplinks {
+	text-align: left;
+}
+
+.sainapblue {
+	width: 87%;
 }
 
 /*** edit page ***/
@@ -410,13 +421,26 @@ label.form-control {
 
 /*** Show page ***/
 
-.showpic {
-	padding-top: 50px;
+.introshow h4 {
+	font-family: Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
+	text-align: center;
+	text-transform: lowercase;
 }
 
+.introshow h3 {
+	font-family: Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
 .bigshowpic {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.bigpicc, h4 p {
+	font-family: Courier New, Lucida Sans Typewriter, Verdana, sans-serif;
 }
 
 /*** new-comment page ***/
