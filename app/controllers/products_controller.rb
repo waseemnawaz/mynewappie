@@ -24,6 +24,7 @@ class ProductsController < ApplicationController
       @products = Product.where("name ilike ?", "%#{search_term}%")
     else
       @products = Product.all
+    end
   end
 
   # GET /products/1
