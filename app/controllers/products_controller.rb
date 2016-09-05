@@ -9,13 +9,21 @@ class ProductsController < ApplicationController
     #search_term = params[:q]
   #end
   def index
-    if params[:q]
+    #if params[:q]
+      #search_term = params[:q]
+      #@products = Product.where("name LIKE ?", "%#{search_term}%")
+    #else
+      #@products = Product.all
+    #end
+    #respond_with @products
+    if params[:q] && Rails.env.development?
       search_term = params[:q]
       @products = Product.where("name LIKE ?", "%#{search_term}%")
+    elsif params[:q] && Rails.env.production?
+      search_term = params[:q]
+      @products = Product.where("name ilike ?", "%#{search_term}%")
     else
       @products = Product.all
-    end
-    respond_with @products
   end
 
   # GET /products/1
