@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+li.logina {
+	display: none;
+}
 /*** Navigation bar typography ***/
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -69,6 +72,8 @@ body {
 	padding-top: 80px;
 	background-color: white;
 }
+
+/*** Sticky footer ***/
 
 * {
   margin: 0;
