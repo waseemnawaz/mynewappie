@@ -24,6 +24,7 @@
 			<h4>
   			<span class="glyphicon glyphicon-usd" aria-hidden="true"><strong> Price:</strong></span>
   			<%= @product.price.to_d/100 %>
+  			<%#= @product.price %>
 			</h4>
 			<%= form_tag "/payments/create" do %><%= hidden_field_tag(:product_id, @product.id) %>
   				<%= render partial: "shared/stripe_checkout_button" %>
