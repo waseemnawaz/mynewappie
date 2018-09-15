@@ -28,7 +28,7 @@ $.fn.euCookieLawPopup = (function() {
 	///////////////////////////////////////////////////////////////////////////////////////////////
 	// PARAMETERS (MODIFY THIS PART) //////////////////////////////////////////////////////////////
 	_self.params = {
-		cookiePolicyUrl : 'https://privacypolicies.com/privacy/view/2H9Mth',
+		cookiePolicyUrl : 'https://www.youronlinechoices.eu/',
 		popupPosition : 'top',
 		colorStyle : 'default',
 		compactStyle : false,
